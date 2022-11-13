@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.markSelections {
+    display: flex;
+    justify-content: space-around;
+    width: 60vh;
+    margin: 10px 0 10px 0;
+}
+
+.selectionButton {
+    background-color: antiquewhite;
+    border: 1px solid rgb(164, 130, 86);
+    border-radius: 3px;
+    width: 47%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template: repeat(3, 20vh) / repeat(3, 20vh);
+    user-select: none;
+}
+
+.square {
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17vh;
+    font-family: fantasy;
+}
+
+.square-x {   
+    color: blue;
+}
+
+.square-o {
+    color: blueviolet;
+}
+
+.blink {
+    animation: blinker 0.9s linear infinite;
+    color: #1c87c9;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+    @keyframes blinker {  
+    50% { opacity: 0; }
+}
+
+.blur {
+    filter: blur(0.5rem);
+    z-index:1;
+}
+.resultScreen {
+    width:50vw;
+    height:50vh;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /* background:rgb(216, 211, 185, 0.4); */
+    z-index:10;
+    font-size: 10vh;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}

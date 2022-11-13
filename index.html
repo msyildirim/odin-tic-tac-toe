@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameFrame">
+        <div class="markSelections">
+            <p id="xselection" class="selectionButton">X</p>
+            <p id="oselection" class="selectionButton">O</p>
+        </div>
+        <div class="gameBoard">
+            <div class="square row0 column0" id="square-00" data-index="00"></div>
+            <div class="square row0 column1" id="square-01" data-index="01"></div>
+            <div class="square row0 column2" id="square-02" data-index="02"></div>
+            <div class="square row1 column0" id="square-10" data-index="10"></div>
+            <div class="square row1 column1" id="square-11" data-index="11"></div>
+            <div class="square row1 column2" id="square-12" data-index="12"></div>
+            <div class="square row2 column0" id="square-20" data-index="20"></div>
+            <div class="square row2 column1" id="square-21" data-index="21"></div>
+            <div class="square row2 column2" id="square-22" data-index="22"></div>
+        </div>
+    </div>
+    <div class="resultScreen hide"></div>
+    <script src="tic-toc-toe.js"></script>
+</body>
+</html>
